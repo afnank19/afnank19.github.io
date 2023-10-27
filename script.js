@@ -12,3 +12,11 @@ window.addEventListener("mousemove", function(e){
 window.addEventListener("touchstart",function(e){
     trailer.style.opacity = 0;
 })
+
+function CopyMail(){
+    var textToBeCopied = "afnank19@gmail.com";
+
+    navigator.clipboard.writeText(textToBeCopied);
+
+    alert("Copied! :)")
+}

@@ -103,11 +103,19 @@ body{
     font-family: 'Inter Tight', serif;
     font-size: 16px;
     margin: 0%;
+    padding: 0;
 }
 @media only screen and (max-width: 389px) {
     #nav-links-section,
-    #nav-name-section{
+    #nav-name-section,
+    #mail-button{
         font-size: 12px;
+    }
+}
+@media only screen and (max-width: 445px) {
+    #nav-links-section{
+        padding-left: 0;
+        padding-right: 25;
     }
 }
 .main-content{

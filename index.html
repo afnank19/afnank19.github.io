@@ -1,47 +1,189 @@
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
-      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
-      crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Afnan Khalid</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Afnan Khalid - Portfolio</title>
     <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="loading-screen">
-        solyzr
-    </div>
-    <div class="intro-card">
-        <div class="blob-container">
-            <div class="blob"></div>
-            <div class="blob blob-2"></div>
-            <div class="blob blob-3"></div>
+  </head>
+  <body id="scroll-bar">
+   
+
+	<div class="nav-bar">
+        <div class="logo-area"><img class="logo" alt="logo" src="three.svg" width="40px" height="40px"></div>
+        <div class="nav-area">
+            <!-- <h1 class="nav-name"></h1> -->
+            <p id="localtime"></p>
+            <button class="Button" href="#">
+                <span class="Button__inner">Copy Mail?</span>
+            </button>
         </div>
-        <div class="card-content">
-            <nav class="nav">
-                <div class="nav-section" id="nav-name-section">
+    </div>
+    <div class="main-body">
+        <div class="left-space"></div>
+        <div class="main-content">
+            <div class="m-name-desc">
+                <p class="name">
                     Afnan Khalid
-                </div>
-                <div class="nav-section" id="nav-links-section">
-                    <a href="https://github.com/afnank19" class="nav-link">Github</a>
-                    <button onclick="CopyMail()" class="nav-link copy-button" id="mail-button">Copy Mail?</button>
-                </div>
-            </nav>
-            <div class="main-content">
-                <p class="card-text">
-                    Hello! I'm Afnan Khalid, currently based in Pakistan. <br>I enjoy creating aesthetic visuals and experimenting with new techniques through coding. 
+                    <br>
+                    <span class="swe">Software Developer</span>
                 </p>
-                <div class="contact">
-                    <i class="fa-solid fa-arrow-right arrow" style="color: #ffffff;"></i>
-                    <a href="projects.html" class="contact-link">View my work</a>
+                <div class="description-container">
+                    <p class="description">Building polished software.<br>
+                        Improving my skills through<br>
+                        exploration and curiosity.
+                    </p>
+                    <p class="fcc">OO  focus, control, conviction</p>
                 </div>
             </div>
+
+            <div class="witty-line">
+                <p class="wit">Chasing preeminence</p>
+            </div>
+            <div class="dot-grid">
+
+            </div>
+            <div class="project-header teck-stack">
+                <h1 class="ph-heading ts-heading">Tech Stack</h1>
+                <p class="description ph-desc ts-desc">Technologies that enable<br>my creations.</p>
+            </div>
+            <div class="ts-slider-container">
+                <div class="ts-section">
+                    <i class="fa-brands fa-react ts-icon"></i>
+                    <p class="ts-skill">ReactJS</p>
+                </div>
+                <div class="ts-section">
+                    <i class="fa-solid fa-code ts-icon"></i>
+                    <p class="ts-skill">ExpressJS</p>
+                </div>
+                <div class="ts-section">
+                    <i class="fa-brands fa-node-js ts-icon"></i>
+                    <p class="ts-skill">NodeJS</p>
+                </div>
+                <div class="ts-section">
+                    <i class="fa-solid fa-database ts-icon"></i>
+                    <p class="ts-skill">MS SQL</p>
+                </div>
+                <div class="ts-section">
+                    <i class="fa-brands fa-figma ts-icon"></i>
+                    <p class="ts-skill">Figma</p>
+                </div>
+                <div class="ts-section">
+                    <i class="fa-brands fa-unity ts-icon"></i>
+                    <p class="ts-skill">Unity</p>
+                </div>
+
+            </div>
+            <div class="project-header">
+                <h1 class="ph-heading">Selected Work</h1>
+                <p class="ph-desc">Projects that push the ceiling of<br> challenge and creativity.</p>
+            </div>
+
+            <div class="project-details">
+                <div class="project-info">
+                    <div class="project-name-desc">
+                        <div class="wipe-wrapper">
+                            <h1 class="project-name" id="project-name">filmSorted!</h1>
+                        </div>
+                        <div class="wipe-wrapper">
+                            <p class="project-description" id="project-description">Track what you watch</p>
+                        </div>
+                    </div>
+                    <div class="proj-tech-date">
+                        <div class="proj-tech-container">
+                            <div class="wipe-wrapper">
+                                <p class="project-tech" id="project-tech">React JS</p>
+                            </div>
+                        </div>
+                        <div class="date-wrapper">
+                            <div class="wipe-wrapper">
+                                <p class="project-date" id="project-date">2023</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="view-project">
+                        <button class="Button view-btn" href="#">
+                            <a class="Button__inner view-acr" id="proj-link"  href="https://github.com/afnank19/react_movieDb">View <i class="fa-solid fa-arrow-up fa-rotate-by" style="color: #f7f7f7; --fa-rotate-angle: 45deg;""></i></a>
+                        </button>
+                    </div>
+                </div>
+                <div class="centering">
+                    <div class="project-container">
+                        <div class="projects" id="project-track">
+                            <img class="test-img" id="image" alt="Project Image" src="assets/images/filmsorted.webp"/>
+                            <img class="test-img" id="image" alt="Project Image" src="assets/images/Brainflow.webp"/>
+                            <img class="test-img" id="image" alt="Project Image" src="assets/images/banished2.webp"/>
+                        </div>
+                        <div class="carousel-btn-container">
+                            <button id="prev-btn" class="Button btn-fix prev" aria-label="Previous Project" onclick="PrevCarousel()"><i class="fa-solid fa-chevron-left"></i></button>
+                            <button id="next-btn" class="Button btn-fix next" aria-label="Next Project" onclick="NextCarousel()"><i class="fa-solid fa-chevron-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="footer-header">
+                    <div class="glow" id="f-glow"></div>
+                    <h1 class="f-closure" id="get-in-touch">GET IN TOUCH</h1>
+                </div>
+                <div class="footer-body">
+
+                    <div class="footer-links">
+                        <div class="f-links-wrapper">
+                            <i class="fa-brands fa-github"></i>
+                            <span class="text"><a id="linkanimation" href="https://github.com/afnank19" target="_blank">Github</a> </span>
+                        </div>
+                        <div class="f-links-wrapper">
+                            <i class="fa-brands fa-linkedin"></i>
+                            <span class="text"><a id="linkanimation" href="" target="_blank">LinkedIn</a> </span>
+                        </div>
+                        <div class="f-links-wrapper">
+                            <i class="fa-brands fa-youtube"></i>
+                            <span class="text"><a id="linkanimation" href="https://www.youtube.com/channel/UCNRjTwH7VCoVSgsqP7W6ImQ" target="_blank">YouTube</a> </span>
+                        </div>
+                        <div class="f-links-wrapper">
+                            <i class="fa-brands fa-instagram"></i>
+                            <span class="text"><a id="linkanimation" href="https://www.instagram.com/afnank194/" target="_blank">Instagram</a> </span>
+                        </div>
+
+                    </div>
+
+                    <button class="f-scroll-top" aria-label="Scroll to Top" onclick="ScrollToTop()">
+                        <i class="fa-solid fa-arrow-up arrow-icon"></i>
+                    </button>
+                </div>
+
+                <div class="footer-credits">
+                    <p class="f-name">Afnan Khalid</p>
+                    <p class="f-folio">Portfolio 2024</p>
+                </div>
+            </div>
+
         </div>
     </div>
-    <div class="trailer-div" id="trailer">
+    <div id="trailer"></div>
+    <script src="smooth-scrollbar.js"></script>
 
-    </div>
+    <script>
+      var Scrollbar = window.Scrollbar;
+
+      const options = {
+        damping: 0.06,
+      }
+
+      Scrollbar.init(document.querySelector('#scroll-bar'), options);
+
+      function ScrollToTop(){
+        var scrollbar = Scrollbar.init(document.body); // Initialize Smooth Scrollbar on the body element
+        scrollbar.scrollTo(0, 0, 1200);
+
+        console.log("scrolo");
+        }
+    </script>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

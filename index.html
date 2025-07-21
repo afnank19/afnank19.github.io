@@ -1,189 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Afnan Khalid - Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.2/src/regular/style.css"
+    />
   </head>
-  <body id="scroll-bar">
-   
-
-	<div class="nav-bar">
-        <div class="logo-area"><img class="logo" alt="logo" src="three.svg" width="40px" height="40px"></div>
-        <div class="nav-area">
-            <!-- <h1 class="nav-name"></h1> -->
-            <p id="localtime"></p>
-            <button class="Button" href="#">
-                <span class="Button__inner">Copy Mail?</span>
-            </button>
+  <body>
+    <div class="flex items-center justify-center mx-2">
+      <div class="max-w-3xl w-full">
+        <div class="p-2 text-center border m-1 mt-3 rounded-xl border-yellow-400 bg-yellow-50 drop-shadow-md">
+          <p>Hey, this portfolio is a bit old! You might want to check out: <a href="https://afnank19.pages.dev" class="hover:underline text-blue-800">Afnan Khalid</a></p>
         </div>
-    </div>
-    <div class="main-body">
-        <div class="left-space"></div>
-        <div class="main-content">
-            <div class="m-name-desc">
-                <p class="name">
-                    Afnan Khalid
-                    <br>
-                    <span class="swe">Software Developer</span>
+
+        <nav class="flex justify-between text-lg font-medium py-8">
+          <p class="text-2xl">afnan khalid.</p>
+          <div class="flex gap-4">
+            <a href="#" class="hover:underline">home</a>
+            <a href="#work" class="hover:underline">work</a>
+          </div>
+        </nav>
+
+        <main class="flex flex-col gap-4">
+          <section>
+            <p class="text-xl font-bold py-2">about</p>
+            <p class="text-lg">
+              Hello, World! I'm Afnan Khalid, a software engineer from NUST. I
+              like building polished software, improving my skills through
+              exploration and curiosity. I enjoy building developer tooling, web
+              experiences, and sometimes games!
+            </p>
+          </section>
+          <section>
+            <p class="text-xl font-bold py-2">available on</p>
+            <div class="flex gap-2">
+              <a href="https://linkedin.com/in/afnan-khalid-378685353">
+                <i
+                  class="ph ph-linkedin-logo text-3xl cursor-pointer hover:text-blue-500"
+                ></i>
+              </a>
+              <a href="https://github.com/">
+                <i
+                  class="ph ph-github-logo text-3xl cursor-pointer hover:text-gray-600"
+                ></i>
+              </a>
+              <a href="https://x.com/0xafnan">
+                <i
+                  class="ph ph-x-logo text-3xl cursor-pointer hover:text-gray-600"
+                ></i>
+              </a>
+            </div>
+          </section>
+          <section id="work">
+            <p class="text-xl font-bold py-2">work</p>
+            <div class="flex flex-col gap-4">
+              <a
+                class="border rounded-xl p-4 border-gray-300 hover:border-gray-400"
+                href="https://github.com/afnank19/fuzzy"
+              >
+                <p class="text-lg font-medium">fz</p>
+                <p class="text-gray-700">
+                  Performant terminal based file search, 300,000 files
+                  performantly. Open files or projects in VS code.
                 </p>
-                <div class="description-container">
-                    <p class="description">Building polished software.<br>
-                        Improving my skills through<br>
-                        exploration and curiosity.
-                    </p>
-                    <p class="fcc">OO  focus, control, conviction</p>
-                </div>
+              </a>
+              <a
+                class="border rounded-xl p-4 border-gray-300 hover:border-gray-400"
+                href="https://github.com/afnank19/fuzzy"
+              >
+                <p class="text-lg font-medium">gale</p>
+                <p class="text-gray-700">
+                  Lightweight HTTP server load tester. Simulate multiple
+                  connections on your servers
+                </p>
+              </a>
+              <a
+                class="border rounded-xl p-4 border-gray-300 hover:border-gray-400"
+                href="https://github.com/afnank19/fuzzy"
+              >
+                <p class="text-lg font-medium">gitsage</p>
+                <p class="text-gray-700">
+                  Terminal UI for git for a more efficient git workflow
+                </p>
+              </a>
             </div>
-
-            <div class="witty-line">
-                <p class="wit">Chasing preeminence</p>
+            <div class="py-4 ml-1">
+              <a>more on github</a>
             </div>
-            <div class="dot-grid">
-
-            </div>
-            <div class="project-header teck-stack">
-                <h1 class="ph-heading ts-heading">Tech Stack</h1>
-                <p class="description ph-desc ts-desc">Technologies that enable<br>my creations.</p>
-            </div>
-            <div class="ts-slider-container">
-                <div class="ts-section">
-                    <i class="fa-brands fa-react ts-icon"></i>
-                    <p class="ts-skill">ReactJS</p>
-                </div>
-                <div class="ts-section">
-                    <i class="fa-solid fa-code ts-icon"></i>
-                    <p class="ts-skill">ExpressJS</p>
-                </div>
-                <div class="ts-section">
-                    <i class="fa-brands fa-node-js ts-icon"></i>
-                    <p class="ts-skill">NodeJS</p>
-                </div>
-                <div class="ts-section">
-                    <i class="fa-solid fa-database ts-icon"></i>
-                    <p class="ts-skill">MS SQL</p>
-                </div>
-                <div class="ts-section">
-                    <i class="fa-brands fa-figma ts-icon"></i>
-                    <p class="ts-skill">Figma</p>
-                </div>
-                <div class="ts-section">
-                    <i class="fa-brands fa-unity ts-icon"></i>
-                    <p class="ts-skill">Unity</p>
-                </div>
-
-            </div>
-            <div class="project-header">
-                <h1 class="ph-heading">Selected Work</h1>
-                <p class="ph-desc">Projects that push the ceiling of<br> challenge and creativity.</p>
-            </div>
-
-            <div class="project-details">
-                <div class="project-info">
-                    <div class="project-name-desc">
-                        <div class="wipe-wrapper">
-                            <h1 class="project-name" id="project-name">filmSorted!</h1>
-                        </div>
-                        <div class="wipe-wrapper">
-                            <p class="project-description" id="project-description">Track what you watch</p>
-                        </div>
-                    </div>
-                    <div class="proj-tech-date">
-                        <div class="proj-tech-container">
-                            <div class="wipe-wrapper">
-                                <p class="project-tech" id="project-tech">React JS</p>
-                            </div>
-                        </div>
-                        <div class="date-wrapper">
-                            <div class="wipe-wrapper">
-                                <p class="project-date" id="project-date">2023</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="view-project">
-                        <button class="Button view-btn" href="#">
-                            <a class="Button__inner view-acr" id="proj-link"  href="https://github.com/afnank19/react_movieDb">View <i class="fa-solid fa-arrow-up fa-rotate-by" style="color: #f7f7f7; --fa-rotate-angle: 45deg;""></i></a>
-                        </button>
-                    </div>
-                </div>
-                <div class="centering">
-                    <div class="project-container">
-                        <div class="projects" id="project-track">
-                            <img class="test-img" id="image" alt="Project Image" src="assets/images/filmsorted.webp"/>
-                            <img class="test-img" id="image" alt="Project Image" src="assets/images/Brainflow.webp"/>
-                            <img class="test-img" id="image" alt="Project Image" src="assets/images/banished2.webp"/>
-                        </div>
-                        <div class="carousel-btn-container">
-                            <button id="prev-btn" class="Button btn-fix prev" aria-label="Previous Project" onclick="PrevCarousel()"><i class="fa-solid fa-chevron-left"></i></button>
-                            <button id="next-btn" class="Button btn-fix next" aria-label="Next Project" onclick="NextCarousel()"><i class="fa-solid fa-chevron-right"></i></button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="footer">
-                <div class="footer-header">
-                    <div class="glow" id="f-glow"></div>
-                    <h1 class="f-closure" id="get-in-touch">GET IN TOUCH</h1>
-                </div>
-                <div class="footer-body">
-
-                    <div class="footer-links">
-                        <div class="f-links-wrapper">
-                            <i class="fa-brands fa-github"></i>
-                            <span class="text"><a id="linkanimation" href="https://github.com/afnank19" target="_blank">Github</a> </span>
-                        </div>
-                        <div class="f-links-wrapper">
-                            <i class="fa-brands fa-linkedin"></i>
-                            <span class="text"><a id="linkanimation" href="" target="_blank">LinkedIn</a> </span>
-                        </div>
-                        <div class="f-links-wrapper">
-                            <i class="fa-brands fa-youtube"></i>
-                            <span class="text"><a id="linkanimation" href="https://www.youtube.com/channel/UCNRjTwH7VCoVSgsqP7W6ImQ" target="_blank">YouTube</a> </span>
-                        </div>
-                        <div class="f-links-wrapper">
-                            <i class="fa-brands fa-instagram"></i>
-                            <span class="text"><a id="linkanimation" href="https://www.instagram.com/afnank194/" target="_blank">Instagram</a> </span>
-                        </div>
-
-                    </div>
-
-                    <button class="f-scroll-top" aria-label="Scroll to Top" onclick="ScrollToTop()">
-                        <i class="fa-solid fa-arrow-up arrow-icon"></i>
-                    </button>
-                </div>
-
-                <div class="footer-credits">
-                    <p class="f-name">Afnan Khalid</p>
-                    <p class="f-folio">Portfolio 2024</p>
-                </div>
-            </div>
-
-        </div>
+          </section>
+          <section class="mb-8">
+            <p class="text-xl font-bold py-2">tools</p>
+            <p>
+              <a href="https://skillicons.dev" class="flex flex-wrap gap-1">
+                <img src="https://skillicons.dev/icons?i=astro" />
+                <img src="https://skillicons.dev/icons?i=bash" />
+                <img src="https://skillicons.dev/icons?i=cloudflare" />
+                <img src="https://skillicons.dev/icons?i=css" />
+                <img src="https://skillicons.dev/icons?i=docker" />
+                <img src="https://skillicons.dev/icons?i=express" />
+                <img src="https://skillicons.dev/icons?i=firebase" />
+                <img src="https://skillicons.dev/icons?i=git" />
+                <img src="https://skillicons.dev/icons?i=github" />
+                <img src="https://skillicons.dev/icons?i=githubactions" />
+                <img src="https://skillicons.dev/icons?i=go" />
+                <img src="https://skillicons.dev/icons?i=graphql" />
+                <img src="https://skillicons.dev/icons?i=html" />
+                <img src="https://skillicons.dev/icons?i=js" />
+                <img src="https://skillicons.dev/icons?i=linux" />
+                <img src="https://skillicons.dev/icons?i=mongodb" />
+                <img src="https://skillicons.dev/icons?i=nextjs" />
+                <img src="https://skillicons.dev/icons?i=nodejs" />
+                <img src="https://skillicons.dev/icons?i=npm" />
+                <img src="https://skillicons.dev/icons?i=p5js" />
+                <img src="https://skillicons.dev/icons?i=postman" />
+                <img src="https://skillicons.dev/icons?i=postgres" />
+                <img src="https://skillicons.dev/icons?i=react" />
+                <img src="https://skillicons.dev/icons?i=sqlite" />
+                <img src="https://skillicons.dev/icons?i=supabase" />
+                <img src="https://skillicons.dev/icons?i=tailwind" />
+                <img src="https://skillicons.dev/icons?i=threejs" />
+                <img src="https://skillicons.dev/icons?i=ts" />
+                <img src="https://skillicons.dev/icons?i=unity" />
+                <img src="https://skillicons.dev/icons?i=vercel" />
+                <img src="https://skillicons.dev/icons?i=vite" />
+              </a>
+            </p>
+          </section>
+        </main>
+      </div>
     </div>
-    <div id="trailer"></div>
-    <script src="smooth-scrollbar.js"></script>
-
-    <script>
-      var Scrollbar = window.Scrollbar;
-
-      const options = {
-        damping: 0.06,
-      }
-
-      Scrollbar.init(document.querySelector('#scroll-bar'), options);
-
-      function ScrollToTop(){
-        var scrollbar = Scrollbar.init(document.body); // Initialize Smooth Scrollbar on the body element
-        scrollbar.scrollTo(0, 0, 1200);
-
-        console.log("scrolo");
-        }
-    </script>
-    <script src="script.js"></script>
   </body>
 </html>
